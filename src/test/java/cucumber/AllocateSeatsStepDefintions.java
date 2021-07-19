@@ -3,6 +3,7 @@ package cucumber;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 public class AllocateSeatsStepDefintions {
 
@@ -35,4 +36,15 @@ public class AllocateSeatsStepDefintions {
     public void user_book_seats(Integer int1) {
         System.out.println("user book {int} seats");
     }
+
+    @When("user try to book {int} seats")
+    public void user_try_to_book_seats(Integer int1) {
+
+    }
+
+    @Then("system should not do the booking")
+    public void system_should_not_do_the_booking() {
+        Assert.assertTrue(false);
+    }
+
 }

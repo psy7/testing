@@ -1,3 +1,7 @@
+cucumber\InitHooks.class
+utility\DriverFactory.class
+cucumber\LoginStepDefs.class
+pages\LoginPageObject.class
 cucumber\RunCucumberTest.class
 cucumber\AllocateSeatsStepDefintions.class
 cucumber\StepDefinitions.class

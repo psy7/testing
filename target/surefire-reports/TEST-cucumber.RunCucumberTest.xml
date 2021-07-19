@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="cucumber.RunCucumberTest" time="0.305" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="cucumber.RunCucumberTest" time="7.62" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2020.3.3"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -64,8 +64,5 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Automatically Allocate Seat" name="All carriages will have less than 70% allocation" time="0.286"/>
-  <testcase classname="Automatically Allocate Seat" name="One carriage will have more than 70% allocation" time="0.005"/>
-  <testcase classname="Automatically Allocate Seat" name="All carriages will have more than 70% allocation, train allocation below 70%" time="0.008"/>
-  <testcase classname="Automatically Allocate Seat" name="The one where user can book more than 4 seats" time="0.006"/>
+  <testcase classname="Login" name="The one where user can do login successfully" time="7.62"/>
 </testsuite>

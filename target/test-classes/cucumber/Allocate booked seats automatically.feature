@@ -44,3 +44,12 @@ Feature: Automatically Allocate Seat
       |Booking Seats|  6  | 5  |
     When user book 4 seats
     Then the seats should be allocated in Carriage A
+
+
+    Scenario: The one where user is unable to book a seat
+      Given a train with the following configuration:
+        | carriage    |  A  | B  |
+        |Total Seats  |  10 | 10 |
+        |Booking Seats|  6  | 5  |
+      When user try to book 6 seats
+      Then system should not do the booking

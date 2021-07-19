@@ -1,0 +1,316 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-19T05:12:20.101Z",
+        "line": 14,
+        "name": "All carriages will have less than 70% allocation",
+        "description": "",
+        "id": "automatically-allocate-seat;all-carriages-will-have-less-than-70%-allocation",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "a train with the following configuration:",
+            "match": {
+              "location": "cucumber.AllocateSeatsStepDefintions.a_train_with_the_following_configuration(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "carriage",
+                  "A",
+                  "B"
+                ]
+              },
+              {
+                "cells": [
+                  "Total Seats",
+                  "10",
+                  "10"
+                ]
+              },
+              {
+                "cells": [
+                  "Booking Seats",
+                  "4",
+                  "0"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "a booking  for 2 seats is made",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 15
+                }
+              ],
+              "location": "cucumber.AllocateSeatsStepDefintions.a_booking_for_seats_is_made(java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the seats should be allocated in Carriage A",
+            "match": {
+              "location": "cucumber.AllocateSeatsStepDefintions.the_seats_should_be_allocated_in_carriage_a()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-19T05:12:20.203Z",
+        "line": 22,
+        "name": "One carriage will have more than 70% allocation",
+        "description": "",
+        "id": "automatically-allocate-seat;one-carriage-will-have-more-than-70%-allocation",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "a train with the following configuration:",
+            "match": {
+              "location": "cucumber.AllocateSeatsStepDefintions.a_train_with_the_following_configuration(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "carriage",
+                  "A",
+                  "B"
+                ]
+              },
+              {
+                "cells": [
+                  "Total Seats",
+                  "10",
+                  "10"
+                ]
+              },
+              {
+                "cells": [
+                  "Booking Seats",
+                  "7",
+                  "0"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "a booking for 1 seat is made",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 14
+                }
+              ],
+              "location": "cucumber.AllocateSeatsStepDefintions.a_booking_for_seat_is_made(java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "the seats should be allocated in Carriage B",
+            "match": {
+              "location": "cucumber.AllocateSeatsStepDefintions.the_seats_should_be_allocated_in_carriage_b()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-19T05:12:20.210Z",
+        "line": 31,
+        "name": "All carriages will have more than 70% allocation, train allocation below 70%",
+        "description": "",
+        "id": "automatically-allocate-seat;all-carriages-will-have-more-than-70%-allocation--train-allocation-below-70%",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "a train with the following configuration:",
+            "match": {
+              "location": "cucumber.AllocateSeatsStepDefintions.a_train_with_the_following_configuration(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "carriage",
+                  "A",
+                  "B"
+                ]
+              },
+              {
+                "cells": [
+                  "Total Seats",
+                  "10",
+                  "10"
+                ]
+              },
+              {
+                "cells": [
+                  "Booking Seats",
+                  "6",
+                  "5"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "a booking  for 3 seats is made",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 15
+                }
+              ],
+              "location": "cucumber.AllocateSeatsStepDefintions.a_booking_for_seats_is_made(java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "the seats should be allocated in Carriage A",
+            "match": {
+              "location": "cucumber.AllocateSeatsStepDefintions.the_seats_should_be_allocated_in_carriage_a()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-19T05:12:20.218Z",
+        "line": 40,
+        "name": "The one where user can book more than 4 seats",
+        "description": "",
+        "id": "automatically-allocate-seat;the-one-where-user-can-book-more-than-4-seats",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "a train with the following configuration:",
+            "match": {
+              "location": "cucumber.AllocateSeatsStepDefintions.a_train_with_the_following_configuration(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "carriage",
+                  "A",
+                  "B"
+                ]
+              },
+              {
+                "cells": [
+                  "Total Seats",
+                  "10",
+                  "10"
+                ]
+              },
+              {
+                "cells": [
+                  "Booking Seats",
+                  "6",
+                  "5"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "user book 4 seats",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 10
+                }
+              ],
+              "location": "cucumber.AllocateSeatsStepDefintions.user_book_seats(java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "the seats should be allocated in Carriage A",
+            "match": {
+              "location": "cucumber.AllocateSeatsStepDefintions.the_seats_should_be_allocated_in_carriage_a()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Automatically Allocate Seat",
+    "description": "  Customers who buy tickets in advance should be given the opportunity to also book their seats in advance.\n  Seats will be allocated automatically\n\n  Business Rules:\n  -Ideally, do not book more than 70% of the seats in carriage\n\n  -Don\u0027t book more than 70% of the available seats on the train\n\n  -Don\u0027t split bookings across carriages",
+    "id": "automatically-allocate-seat",
+    "keyword": "Feature",
+    "uri": "classpath:cucumber/Allocate%20booked%20seats%20automatically.feature",
+    "tags": []
+  }
+]
